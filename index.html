@@ -3,33 +3,41 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Your Startup Name</title>
+    <title>MynAI - AI CTS</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Segoe UI', Arial, sans-serif;
             margin: 0;
             background: #f9fafb;
             color: #333;
+            line-height: 1.6;
         }
         header {
-            background: #2563eb;
+            background: linear-gradient(135deg, #2563eb, #1d4ed8);
             color: white;
-            padding: 2rem;
+            padding: 3rem 2rem;
             text-align: center;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.15);
         }
         header h1 {
-            font-size: 2.5rem;
+            font-size: 3rem;
             margin: 0;
         }
         header p {
             font-size: 1.2rem;
             margin-top: 0.5rem;
+            opacity: 0.9;
         }
         main {
-            max-width: 800px;
+            max-width: 900px;
             margin: auto;
             padding: 2rem;
             text-align: center;
+        }
+        main h2 {
+            font-size: 2rem;
+            margin-top: 2rem;
+            color: #1e3a8a;
         }
         .cta-button {
             display: inline-block;
@@ -37,52 +45,85 @@
             background: #2563eb;
             color: white;
             text-decoration: none;
-            border-radius: 5px;
+            border-radius: 8px;
             margin-top: 1rem;
-            transition: background 0.3s;
+            font-weight: bold;
+            transition: background 0.3s, transform 0.2s;
         }
         .cta-button:hover {
             background: #1d4ed8;
+            transform: scale(1.05);
+        }
+        form {
+            margin-top: 1.5rem;
+        }
+        input[type="email"] {
+            padding: 0.9rem;
+            width: 260px;
+            max-width: 80%;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            font-size: 1rem;
+        }
+        button {
+            padding: 0.9rem 1.3rem;
+            background: #2563eb;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            margin-left: 0.5rem;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: background 0.3s, transform 0.2s;
+        }
+        button:hover {
+            background: #1d4ed8;
+            transform: scale(1.05);
+        }
+        .contact {
+            margin-top: 3rem;
+            padding: 2rem;
+            background: #f1f5f9;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .contact h2 {
+            margin-bottom: 1rem;
+            color: #1e3a8a;
+        }
+        .contact p {
+            font-size: 1.1rem;
+            margin: 0.5rem 0;
+        }
+        .contact a {
+            color: #2563eb;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .contact a:hover {
+            text-decoration: underline;
         }
         footer {
-            background: #f1f5f9;
+            background: #1e293b;
+            color: #e2e8f0;
             padding: 1rem;
             text-align: center;
             font-size: 0.9rem;
             margin-top: 2rem;
-        }
-        input[type="email"] {
-            padding: 0.8rem;
-            width: 250px;
-            max-width: 80%;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-        button {
-            padding: 0.8rem 1.2rem;
-            background: #2563eb;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            margin-left: 0.5rem;
-            cursor: pointer;
-        }
-        button:hover {
-            background: #1d4ed8;
         }
     </style>
 </head>
 <body>
 
     <header>
-        <h1>🚀AI - CTS by MynAI</h1>
+        <h1>🚀 AI - CTS by MynAI</h1>
         <p>We help you achieve amazing results with less effort.</p>
     </header>
 
     <main>
         <h2>Be the First to Know</h2>
         <p>Sign up to get early access and exclusive updates.</p>
-        
+
         <form action="https://formspree.io/f/mkgzknag" method="POST">
             <input type="email" name="email" placeholder="Enter your email" required>
             <button type="submit">Notify Me</button>
@@ -91,7 +132,13 @@
         <h2>Why Choose Us?</h2>
         <p>We’re building tools that will make your workflow faster, smarter, and more enjoyable.</p>
 
-        <a href="#learn-more" class="cta-button">Learn More</a>
+        <a href="#contact" class="cta-button">Learn More</a>
+
+        <div id="contact" class="contact">
+            <h2>Contact Us</h2>
+            <p>📞 <a href="tel:+77772820064">+7 777 282 0064</a></p>
+            <p>📧 <a href="mailto:go@mynai.xyz">go@mynai.xyz</a></p>
+        </div>
     </main>
 
     <footer>
